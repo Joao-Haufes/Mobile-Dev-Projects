@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Vamos Calcular!"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editN1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#FFFFFF"
+        android:backgroundTintMode="src_over"
+        android:ems="10"
+        android:hint="put your number here"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHello" />
+
+    <Button
+        android:id="@+id/btSum"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="88dp"
+        android:text="Somar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editN2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="60dp"
+        android:background="#009688"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="screen"
+        android:padding="3dp"
+        android:paddingStart="3dp"
+        android:paddingLeft="3dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="3dp"
+        android:paddingRight="3dp"
+        android:paddingBottom="3dp"
+        android:text="Digite um número:"
+        android:textColor="#EFEFEF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHello"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="32dp"
+        android:background="#009688"
+        android:padding="3dp"
+        android:paddingStart="3dp"
+        android:paddingLeft="3dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="3dp"
+        android:paddingRight="3dp"
+        android:paddingBottom="3dp"
+        android:text="Digite outro número:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editN1"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editN2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:backgroundTint="#FFFFFF"
+        android:backgroundTintMode="src_over"
+        android:ems="10"
+        android:hint="put your number here"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHello" />
+
+    <Button
+        android:id="@+id/btSubt"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:text="Subtrair"
+        app:layout_constraintStart_toEndOf="@+id/btMult"
+        app:layout_constraintTop_toBottomOf="@+id/btDiv" />
+
+    <Button
+        android:id="@+id/btMult"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="multiplicar"
+        app:layout_constraintEnd_toEndOf="@+id/btSum"
+        app:layout_constraintTop_toBottomOf="@+id/btSum" />
+
+    <Button
+        android:id="@+id/btDiv"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="88dp"
+        android:text="dividir"
+        app:layout_constraintStart_toEndOf="@+id/btSum"
+        app:layout_constraintTop_toBottomOf="@+id/editN2" />
+
+    <ImageButton
+        android:id="@+id/btBack"
+        android:layout_width="68dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#00FF0A"
+        android:contextClickable="false"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btMult"
+        app:layout_constraintTop_toBottomOf="@+id/btMult"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
